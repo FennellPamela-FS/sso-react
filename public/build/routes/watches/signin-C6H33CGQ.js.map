@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/watches/signin.tsx"],
+  "sourcesContent": ["import { SignIn } from \"@clerk/remix\";\n\nexport default function LogIn() {\n  return <SignIn />;\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA,mBAAuB;AAGd;AADM,SAAR,QAAyB;AAC9B,SAAO,mDAAC,yBAAD;AAAA;AAAA;AAAA;AAAA,SAAQ;AACjB;",
+  "names": []
+}

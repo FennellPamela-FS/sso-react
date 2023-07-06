@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/demos/correct.tsx"],
+  "sourcesContent": ["export default function NiceWork() {\n  return <h1>You got it right!</h1>;\n}\n"],
+  "mappings": ";;;;;;AACS;AADM,SAAR,WAA4B;AACjC,SAAO,mDAAC,QAAG,iCAAJ;AAAA;AAAA;AAAA;AAAA,SAAqB;AAC9B;",
+  "names": []
+}

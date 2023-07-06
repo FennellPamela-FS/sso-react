@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/watches/protected.tsx"],
+  "sourcesContent": ["import { getAuth } from \"@clerk/remix/ssr.server\";\nimport type { LoaderFunction } from \"@remix-run/node\";\nimport { json } from \"@remix-run/node\";\nimport { redirect } from \"@remix-run/node\";\nimport { useLoaderData, Link } from \"@remix-run/react\";\n\nexport const loader: LoaderFunction = async (args) => {\n  const { userId } = await getAuth(args);\n  if (!userId) {\n    return redirect(\"/demos/signin\");\n  }\n  return json({ userId });\n};\n\nexport default function Protected() {\n  const data = useLoaderData<typeof loader>();\n\n  return (\n    <div>\n      <h1>Protected</h1>\n      <h2>You're in! UserId is {data.userId}</h2>\n      <a href=\"https://mytcreative.com\" target=\"_blank\" rel=\"noreferrer\">mytCreative</a>\n    </div>);\n}\n"],
+  "mappings": ";;;;;;;;;;;;;AAAA,iBAAwB;AAIxB;AAeM;AALS,SAAR,YAA6B;AAClC,QAAM,OAAO,cAA6B;AAE1C,SACE,mDAAC,SACC;AAAA,uDAAC,QAAG,yBAAJ;AAAA;AAAA;AAAA;AAAA,WAAa;AAAA,IACb,mDAAC,QAAG;AAAA;AAAA,MAAsB,KAAK;AAAA,SAA/B;AAAA;AAAA;AAAA;AAAA,WAAsC;AAAA,IACtC,mDAAC,OAAE,MAAK,2BAA0B,QAAO,UAAS,KAAI,cAAa,2BAAnE;AAAA;AAAA;AAAA;AAAA,WAA8E;AAAA,OAHhF;AAAA;AAAA;AAAA;AAAA,SAIA;AACJ;",
+  "names": []
+}

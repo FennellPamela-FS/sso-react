@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/prayer/about/whoa.tsx"],
+  "sourcesContent": ["import { Link } from \"@remix-run/react\";\n\nexport default function Whoa() {\n  return (\n    <div>\n      <p>\n        Whoa, this is a nested route! We render the <code>/about</code> layout\n        route component, and its <code>Outlet</code> renders our route\n        component. \uD83E\uDD2F\n      </p>\n      <p>\n        <strong>\n          <Link to=\"..\">\n            Go back to the <code>/about</code> index.\n          </Link>\n        </strong>\n      </p>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;AAMoD;AAJrC,SAAR,OAAwB;AAC7B,SACE,mDAAC,SACC;AAAA,uDAAC,OAAE;AAAA;AAAA,MAC2C,mDAAC,UAAK,sBAAN;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MAAO;AAAA,MACtC,mDAAC,UAAK,sBAAN;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MAAO;AAAA,SAF9C;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,IACA,mDAAC,OACC,6DAAC,YACC,6DAAC,QAAK,IAAG,MAAK;AAAA;AAAA,MACG,mDAAC,UAAK,sBAAN;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MAAO;AAAA,SADpC;AAAA;AAAA;AAAA;AAAA,WAEA,KAHF;AAAA;AAAA;AAAA;AAAA,WAIA,KALF;AAAA;AAAA;AAAA;AAAA,WAMA;AAAA,OAZF;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;",
+  "names": []
+}

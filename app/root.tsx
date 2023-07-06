@@ -61,6 +61,7 @@ export const loader: LoaderFunction = (args) => rootAuthLoader(args);
  * route via the `<Outlet />` component. Think of this as the global layout
  * component for your app.
  */
+
 function App() {
   return (
     <Document>

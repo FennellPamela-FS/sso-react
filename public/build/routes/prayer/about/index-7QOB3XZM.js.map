@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/prayer/about/index.tsx"],
+  "sourcesContent": ["import { Link } from \"@remix-run/react\";\n\nexport default function AboutIndex() {\n  return (\n    <div>\n      <p>\n        You are looking at the index route for the <code>/about</code> URL\n        segment, but there are nested routes as well!\n      </p>\n      <p>\n        <strong>\n          <Link to=\"whoa\">Check out one of them here.</Link>\n        </strong>\n      </p>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;AAMmD;AAJpC,SAAR,aAA8B;AACnC,SACE,mDAAC,SACC;AAAA,uDAAC,OAAE;AAAA;AAAA,MAC0C,mDAAC,UAAK,sBAAN;AAAA;AAAA;AAAA;AAAA,aAAY;AAAA,MAAO;AAAA,SADhE;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,IACA,mDAAC,OACC,6DAAC,YACC,6DAAC,QAAK,IAAG,QAAO,2CAAhB;AAAA;AAAA;AAAA;AAAA,WAA2C,KAD7C;AAAA;AAAA;AAAA;AAAA,WAEA,KAHF;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,OATF;AAAA;AAAA;AAAA;AAAA,SAUA;AAEJ;",
+  "names": []
+}
