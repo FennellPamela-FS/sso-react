@@ -2,7 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import { Link, Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
-  title: "Boundaries Demo",
+  title: "Ear to Hear: eartohear.app",
 });
 
 export default function Boundaries() {

@@ -53,8 +53,8 @@ export const loader = async () => {
         name: "Nested Routes, CSS loading/unloading",
       },
       {
-        to: "prayer/params",
-        name: "URL Params and Error Boundaries",
+        to: "prayer/watches",
+        name: "URL Watches and Error Boundaries",
       },
       { to: "prayer/protected", name: "Protected route" },
     ],

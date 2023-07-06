@@ -1,7 +1,8 @@
 export default function Boundaries() {
   return (
     <>
-      <h2>Params</h2>
+      <h1>The Eight Prayer Watches:</h1>
+      <h2>Which One is Yours?</h2>
       <p>
         When you name a route segment with $ like{" "}
         <code>routes/users/$userId.js</code>, the $ segment will be parsed from

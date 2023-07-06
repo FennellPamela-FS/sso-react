@@ -12,6 +12,11 @@ export default function AboutIndex() {
           <Link to="whoa">Check out one of them here.</Link>
         </strong>
       </p>
+      <p>
+        <strong>
+          <Link to="whoa2">Check out one of them here.</Link>
+        </strong>
+      </p>
     </div>
   );
 }

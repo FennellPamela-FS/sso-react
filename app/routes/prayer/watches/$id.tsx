@@ -35,14 +35,14 @@ export const loader = async ({ params }: LoaderArgs) => {
   // but otherwise the record was found, user has access, so we can do whatever
   // else we needed to in the loader and return the data. (This is boring, we're
   // just gonna return the params.id).
-  return json({ param: params.id });
+  return json({ watch: params.id });
 };
 
-export default function ParamDemo() {
+export default function WatchDemo() {
   const data = useLoaderData<typeof loader>();
   return (
     <h1>
-      The param is <i style={{ color: "red" }}>{data.param}</i>
+      The watch is <i style={{ color: "red" }}>{data.watch}</i>
     </h1>
   );
 }
@@ -109,6 +109,6 @@ export function ErrorBoundary({ error }: { error: Error }) {
 
 export const meta: MetaFunction = ({ data }) => {
   return {
-    title: data ? `Param: ${data.param}` : "Oops...",
+    title: data ? `Watch: ${data.watch}` : "Oops...",
   };
 };

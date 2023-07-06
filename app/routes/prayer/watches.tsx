@@ -13,19 +13,49 @@ export default function Boundaries() {
       </main>
 
       <aside>
-        <h2>Click these Links</h2>
+        <h2>Click to View Watches:</h2>
         <ul>
           <li>
-            <Link to=".">Start over</Link>
+            <Link to=".">Which One is Yours?</Link>
           </li>
           <li>
-            <Link to="one">
-              Param: <i>one</i>
+            <Link to="first">
+              First Watch: <i>The Evening Watch</i>{" "}<strong>6pm–9pm</strong>
             </Link>
           </li>
           <li>
             <Link to="two">
               Param: <i>two</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="three">
+              Param: <i>three</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="four">
+              Param: <i>four</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="five">
+              Param: <i>five</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="six">
+              Param: <i>six</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="seven">
+              Param: <i>seven</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="eight">
+              Param: <i>eight</i>
             </Link>
           </li>
           <li>
