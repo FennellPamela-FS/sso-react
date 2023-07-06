@@ -61,6 +61,7 @@ export const loader: LoaderFunction = (args) => rootAuthLoader(args);
  * route via the `<Outlet />` component. Think of this as the global layout
  * component for your app.
  */
+
 function App() {
   return (
     <Document>
@@ -110,6 +111,9 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
             <ul>
               <li>
                 <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/prayer/watches/">Prayer</Link>
               </li>
               <li>
                 <a href="https://remix.run/docs">Remix Docs</a>

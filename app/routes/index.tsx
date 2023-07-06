@@ -5,6 +5,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 type IndexData = {
   resources: Array<{ name: string; url: string }>;
   demos: Array<{ name: string; to: string }>;
+  prayers: Array<{ name: string; to: string }>;
 };
 
 // Loaders provide data to components and are only ever called on the server, so
@@ -41,6 +42,21 @@ export const loader = async () => {
         name: "URL Params and Error Boundaries",
       },
       { to: "demos/protected", name: "Protected route" },
+    ],
+    prayers: [
+      {
+        to: "prayer/actions",
+        name: "Actions",
+      },
+      {
+        to: "prayer/about",
+        name: "Nested Routes, CSS loading/unloading",
+      },
+      {
+        to: "prayer/watches",
+        name: "URL Watches and Error Boundaries",
+      },
+      { to: "prayer/protected", name: "Protected route" },
     ],
   };
 
@@ -82,6 +98,16 @@ export default function Index() {
             <li key={demo.to} className="remix__page__resource">
               <Link to={demo.to} prefetch="intent">
                 {demo.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <h2>Prayer Watches In This App</h2>
+        <ul>
+          {data.prayers.map((prayer) => (
+            <li key={prayer.to} className="remix__page__resource">
+              <Link to={prayer.to} prefetch="intent">
+                {prayer.name}
               </Link>
             </li>
           ))}
